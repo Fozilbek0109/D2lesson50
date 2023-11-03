@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/img_1"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtSavol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10pt"
+            android:text="jnfebwhbfwhbbbfwbhjbjdcebwahhbdhjbwefhbfejhjbwfbhjbfew"
+            android:layout_marginRight="50dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/radG"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible"
+            >
+
+            <RadioButton
+                android:id="@+id/rad1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:textSize="20sp"
+                android:text="A" />
+
+            <RadioButton
+                android:id="@+id/rad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:textSize="20sp"
+                android:text="B" />
+
+            <RadioButton
+                android:id="@+id/rad3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="C"
+                android:paddingVertical="20dp"/>
+
+            <RadioButton
+                android:id="@+id/rad4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="D"
+                android:paddingVertical="30dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Savollar tugadi"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/correct_answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="To'gri javoblar "
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/error_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:text="0"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/prosent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F43D3B">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/item_next_color"
+            android:padding="15dp"
+            android:text="Tasdiqlash"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/baseline_arrow_back_ios_new_24"
+            android:padding="15dp"
+            android:text="."
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/baseline_arrow_forward_ios_24"
+            android:padding="15dp"
+            android:text="."
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>
